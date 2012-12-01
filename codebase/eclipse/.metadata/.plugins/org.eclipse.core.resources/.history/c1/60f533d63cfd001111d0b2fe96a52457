@@ -1,0 +1,13 @@
+package com.training.processor;
+
+import com.training.num.Number;
+
+public class RationalNumberProcessor implements NumberProcessor {
+
+	@Override
+	public double process(Number num) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

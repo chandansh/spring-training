@@ -1,0 +1,11 @@
+package com.training.emp;
+
+public interface Number {
+	public static final int TYPE_LEVEL1 = 1;
+	public static final int TYPE_LEVEL2 = 2;
+	public static final int TYPE_LEVEL3 = 3;
+	public static final int TYPE_LEVEL4 = 4;
+	
+	public void show();
+	public double getSalary();
+}

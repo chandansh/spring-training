@@ -1,0 +1,7 @@
+package com.training.processor;
+
+import com.training.num.Number;
+
+public interface NumberProcessor {
+	public Number process(Number num);
+}

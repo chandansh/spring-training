@@ -1,0 +1,19 @@
+package com.training.emp;
+
+public class RationalNumber implements Number{
+
+	
+	
+	@Override
+	public void display() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Number add(Number number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

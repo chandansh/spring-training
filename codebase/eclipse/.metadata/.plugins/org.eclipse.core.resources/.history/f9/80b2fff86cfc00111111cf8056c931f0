@@ -1,0 +1,47 @@
+package com.training.num;
+
+public class RationalNumber implements Number {
+	private int type;
+	private int r, i;
+
+	public int getType() {
+		return type;
+	}
+
+	public void setType(int type) {
+		this.type = type;
+	}
+
+	public int getR() {
+		return r;
+	}
+
+	public void setR(int r) {
+		this.r = r;
+	}
+
+	public int getI() {
+		return i;
+	}
+
+	public void setI(int i) {
+		this.i = i;
+	}
+
+	RationalNumber() {
+		this.type = RATIONAL;
+	}
+	
+	@Override
+	public void display() {
+		System.out.println("");
+
+	}
+
+	@Override
+	public Number add(Number number) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
