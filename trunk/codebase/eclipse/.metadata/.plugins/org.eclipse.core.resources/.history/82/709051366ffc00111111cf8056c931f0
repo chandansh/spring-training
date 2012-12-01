@@ -1,0 +1,5 @@
+package com.training.num;
+
+public class NumberFactory {
+
+}

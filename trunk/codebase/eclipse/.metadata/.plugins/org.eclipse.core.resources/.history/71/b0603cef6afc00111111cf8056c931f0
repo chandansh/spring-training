@@ -1,0 +1,7 @@
+package com.training.emp;
+
+public class Level1Employee implements Employee {
+	private int type;
+	private 
+	
+}

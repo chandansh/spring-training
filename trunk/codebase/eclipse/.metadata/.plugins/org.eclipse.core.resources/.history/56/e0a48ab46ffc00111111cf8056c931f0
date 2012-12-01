@@ -1,0 +1,16 @@
+package com.training;
+
+import com.training.num.Number;
+import com.training.num.NumberFactory;
+
+public class FactoryDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		Number num1 = NumberFactory.createNewNumber(Number.COMPLEX, 4,5);
+		Number num2 = 
+
+	}
+}

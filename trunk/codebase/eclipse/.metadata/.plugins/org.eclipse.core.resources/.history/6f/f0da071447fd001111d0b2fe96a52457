@@ -1,0 +1,25 @@
+package com.mypack;
+
+import org.apache.log4j.PropertyConfigurator;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
+import org.springframework.core.io.Resource;
+
+public class SpringDemo {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+
+		/*using bean factory */
+		PropertyConfigurator.configure("log4j.properties");
+		Resource r = new ClassPathResource("applicationContext.xml");
+		BeanFactory factory = new XmlBeanFactory(r);
+		com.training.num.Number num1 = (com.training.num.Number) factory.getBean("num1");
+		num1.
+		
+	}
+
+}

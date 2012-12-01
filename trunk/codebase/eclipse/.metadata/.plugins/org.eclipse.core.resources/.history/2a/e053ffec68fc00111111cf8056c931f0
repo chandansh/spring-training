@@ -1,0 +1,6 @@
+package com.training;
+
+public interface Number {
+	public void display();
+	public Number add(Number number);
+}
