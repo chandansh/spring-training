@@ -1,6 +1,0 @@
-package com.training;
-
-public interface SalaryCalculator {
-	public void display();
-	public SalaryCalculator add(SalaryCalculator number);
-}

@@ -10,6 +10,12 @@ public class HelloWorldImpl implements HelloWorld {
 	public HelloWorldImpl() {
 
 	}
+	
+	public HelloWorldImpl(String message){
+		this.message = message;
+	}
+	
+	
 
 	public HelloWorldImpl(String message, TestBean testBean, List<String> names) {
 		this.message = message;

@@ -31,6 +31,17 @@ public class SpringDemo {
 		Number num2 = (Number) factory1.getBean("num1");
 		num2.display();
 		
+		Number n2 = (Number) factory1.getBean("num2");
+		n2.display();
+		
+		Number n3 = (Number) factory1.getBean("num3");
+		n3.display();
+		
+		Number n4 = (Number) factory1.getBean("num4");
+		n4.display();
+		
+		Number n5 = (Number) factory1.getBean("num5");
+		n5.display();
 		
 		/* using context */
 		ApplicationContext context = new 

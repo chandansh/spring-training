@@ -3,8 +3,9 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-	<bean id="num1" class="com.training.num.ComplexNumber">
+	<bean id="num1" name="num2,num3,num4" class="com.training.num.ComplexNumber">
 		<property name="r" value="7" />
 		<property name="i" value="8" />
 	</bean>
+	<alias name="num1" alias="num5"/>
 </beans>

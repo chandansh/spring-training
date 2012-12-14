@@ -3,10 +3,27 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans-2.0.xsd">
-	<bean id="hello" class="com.test.HelloWorldImpl" >
+	<bean id="hello" name="hello1,hello2" class="com.test.HelloWorldImpl" >
 	   <constructor-arg>
 	      <value>Hello World from Constructure</value>
 	   </constructor-arg>
 	  <!-- <property name="message" value="Hello World from Setter"></property> -->
 	</bean>
+	
+	<bean id="fac" class="com.test.factory.Factory" factory-method="createFactoryObject" />
+	    
+	<bean id="model" class="com.test.factory.ModelFactory" factory-method="createModel"/>
+	<bean id="model1" class="com.test.factory.ModelFactory" factory-method="createModel1"/>
+	<bean id="model2" class="com.test.factory.ModelFactory" factory-method="createModel2"/>
+	
+	
+	<!-- third approach -->
+	<bean id="myFactory" class="com.test.factory.ModelFactory1"/>
+	
+	<bean id="mod" class="com.test.model.Model" factory-bean="myFactory" factory-method="createModel"/>
+	<bean id="mod1" class="com.test.model.Model1" factory-bean="myFactory" factory-method="createModel1"/>
+	<bean id="mod2" class="com.test.model.Model2" factory-bean="myFactory" factory-method="createModel2"/>
+	
+	
+	<alias name="hello" alias="hello3"/>
 </beans>
