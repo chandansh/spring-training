@@ -1,8 +1,0 @@
-package com.training.processor;
-
-import com.training.num.Number;
-
-public interface NumberProcessor {
-	public void display();
-	public double calculate(Number employee);
-}

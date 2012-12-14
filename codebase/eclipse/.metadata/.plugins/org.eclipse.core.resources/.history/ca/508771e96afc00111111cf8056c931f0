@@ -1,8 +1,0 @@
-package com.training.calculator;
-
-import com.training.emp.Employee;
-
-public interface SalaryCalculator {
-	public void display();
-	public double calculate(Employee employee);
-}

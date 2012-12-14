@@ -1,7 +1,0 @@
-package com.training;
-
-public class NumberProcessorDemo {
-	public static void main(String[] args) {
-		
-	}
-}

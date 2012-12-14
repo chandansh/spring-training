@@ -1,5 +1,0 @@
-package com.training.emp;
-
-public class Level4Employee implements Number {
-
-}
