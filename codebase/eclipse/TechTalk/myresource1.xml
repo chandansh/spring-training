@@ -12,28 +12,14 @@ http://www.springframework.org/schema/util
 http://www.springframework.org/schema/util/spring-util-3.0.xsd
 ">
 	
-	<bean id="hello" name="hello1,hello2" class="com.test.HelloWorldImpl" >
-	   <constructor-arg>
-	      <value>Hello World from Constructure</value>
-	   </constructor-arg>
-	  <!-- <property name="message" value="Hello World from Setter"></property> -->
-	</bean>
-	<!-- first approach -->
-	<bean id="fac" class="com.test.factory.Factory" factory-method="createFactoryObject" />
-	
-	<!-- second approach -->
-	<bean id="model" class="com.test.factory.ModelFactory" factory-method="createModel"/>
-	<bean id="model1" class="com.test.factory.ModelFactory" factory-method="createModel1"/>
-	<bean id="model2" class="com.test.factory.ModelFactory" factory-method="createModel2"/>
-	
 	
 	<!-- third approach -->
-	<bean id="model11" class="com.test.model.Model"/>
-	<bean id="model111" class="com.test.model.Model1"/>
-	<bean id="model112" class="com.test.model.Model2"/>
+	<bean id="model11" class="com.test.model.Model" scope="prototype"/>
+	<bean id="model111" class="com.test.model.Model1" scope="prototype"/>
+	<bean id="model112" class="com.test.model.Model2" scope="prototype"/>
 	
 	<bean id="myFactory" class="com.test.factory.ModelFactory1">
-		<property name="model" ref="model11"/>
+		<property name="model" ref="model11" />
 		<property name="model1" ref="model111"/>
 		<property name="model2" ref="model112"/>
 	</bean>
@@ -43,9 +29,6 @@ http://www.springframework.org/schema/util/spring-util-3.0.xsd
 	<bean id="mod" class="com.test.model.Model" factory-bean="myFactory" factory-method="createModel"/>
 	<bean id="mod1" class="com.test.model.Model1" factory-bean="myFactory" factory-method="createModel1"/>
 	<bean id="mod2" class="com.test.model.Model2" factory-bean="myFactory" factory-method="createModel2"/>
-	
-	
-	<alias name="hello" alias="hello3"/>
 	
 	<bean id="myModel" class="com.test.MyModel" scope="prototype"/>
 	

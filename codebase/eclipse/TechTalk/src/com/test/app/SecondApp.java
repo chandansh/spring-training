@@ -34,16 +34,17 @@ public class SecondApp {
 		System.out.println( h2==h3 );
 		System.out.println( h3==h4 );
 		
+		//first approach
 		Factory fac = (Factory) context1.getBean("fac");
 		System.out.println(fac);
 		
-		Model model = (Model) context1.getBean("model");
+		//second approach
+		/*Model model = (Model) context1.getBean("model");
 		System.out.println(model);
-		
 		Model1 model1 = (Model1) context1.getBean("model1");
 		System.out.println(model1);
 		Model2 model2 = (Model2) context1.getBean("model2");
-		System.out.println(model2);
+		System.out.println(model2);*/
 		
 		
 		// third approach
