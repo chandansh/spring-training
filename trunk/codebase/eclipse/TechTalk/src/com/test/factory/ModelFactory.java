@@ -5,10 +5,8 @@ import com.test.model.Model1;
 import com.test.model.Model2;
 
 public class ModelFactory {
-
+	
 	public static Model createModel() {
-		
-		
 		return new Model();
 	}
 
